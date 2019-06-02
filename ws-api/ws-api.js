@@ -173,6 +173,16 @@ module.exports = () => {
   });
 
   /**
+   * [GET] health. Check runnerty instance health
+   *
+   * Output: object
+   */
+  router.get("/health", (req, res) => {
+    res.status(200).send("Your runnerty instance is ok!");
+  });
+
+
+  /**
    * [GET] Get al the chains in the current plan.
    * 
    * Output: chains (JSON)
